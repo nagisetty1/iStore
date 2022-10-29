@@ -22,6 +22,7 @@
         <Entry Placeholder="Password" 
                Text="{Binding Password}"
                IsPassword="False"/>
+        <Label Text="{Binding LoginResponse}" TextColor="{Binding Primary}"/>
         <HorizontalStackLayout HorizontalOptions="Center">
             <Button Text="Login"
                 Command="{Binding LoginButtonCommand}"/>

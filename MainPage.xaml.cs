@@ -21,9 +21,16 @@ public partial class MainPage : ContentPage
 	public MainPage()
 	{
 		InitializeComponent();
-		//MauiPopup.PopupAction.DisplayPopup(new SignInPopup());
-		LoginButtonVisibility = true;
 		loginResult = string.Empty;
+		loginResult = MauiPopup.PopupAction.DisplayPopup(new SignInPopup()).Result;
+		if (!string.IsNullOrEmpty(loginResult))
+		{
+			LoginButtonVisibility = false;
+			DisplayNameVisibility = true;
+			DisplayName = loginResult;
+		}
+
+		LoginButtonVisibility = true;
 		DisplayName = string.Empty;
 		BindingContext = this;
 		DisplayNameVisibility = false;
