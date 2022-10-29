@@ -3,8 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="iStore.SignInPopup"
              xmlns:mauiPopup="clr-namespace:MauiPopup.Views;assembly=MauiPopup"
-             Title="SignInPopup" 
-             IsCloseOnBackgroundClick="True" 
+             Title="SignInPopup"
              VerticalOptions="Center" 
              HorizontalOptions="Center" 
              Background="{StaticResource White}">
@@ -27,10 +26,10 @@
                IsPassword="True"/>
         <HorizontalStackLayout HorizontalOptions="Center">
             <Button Text="Login"
-                Clicked="LoginButton_Clicked"/>
+                Command="{Binding LoginButtonCommand}"/>
             <Button Text="Close"
                 Background="{StaticResource MidGray}"
-                Clicked="CloseButton_Clicked"/>
+                Command="{Binding CloseButtonCommand}"/>
         </HorizontalStackLayout>
     </VerticalStackLayout>
 </mauiPopup:BasePopupPage>
