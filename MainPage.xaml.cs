@@ -9,7 +9,7 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 		BindingContext = this;
-		MauiPopup.PopupAction.DisplayPopup(new SignInPopup());
+		//MauiPopup.PopupAction.DisplayPopup(new SignInPopup());
 	}
 
 	public ICommand RegisterCommand => new Command<string>(async (parameter) => await Launcher.OpenAsync(parameter));

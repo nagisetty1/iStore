@@ -18,17 +18,14 @@
                 FontSize="20"
                 HorizontalOptions="Center" />
         <Entry Placeholder="Username"
-               PlaceholderColor="{StaticResource MidGray}"
                Text="{Binding UserName}"/>
         <Entry Placeholder="Password"
-               PlaceholderColor="{StaticResource MidGray}"
                Text="{Binding Password}"
                IsPassword="True"/>
         <HorizontalStackLayout HorizontalOptions="Center">
             <Button Text="Login"
                 Command="{Binding LoginButtonCommand}"/>
             <Button Text="Close"
-                Background="{StaticResource MidGray}"
                 Command="{Binding CloseButtonCommand}"/>
         </HorizontalStackLayout>
     </VerticalStackLayout>
