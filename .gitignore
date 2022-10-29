@@ -6,3 +6,5 @@
 /.vs
 /obj/Debug
 /iStore.csproj.user
+/bin/Debug/net6.0-android
+/obj

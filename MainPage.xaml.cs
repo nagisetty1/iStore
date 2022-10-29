@@ -15,6 +15,7 @@ public partial class MainPage : ContentPage
 		CounterLabel.Text = $"Current count: {count}";
 
 		SemanticScreenReader.Announce(CounterLabel.Text);
+		MauiPopup.PopupAction.DisplayPopup(new SignInPopup());
 	}
 }
 

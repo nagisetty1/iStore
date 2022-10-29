@@ -48,4 +48,14 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <PackageReference Include="Plugin.Maui.Popup" Version="1.0.5" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="SignInPopup.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>
