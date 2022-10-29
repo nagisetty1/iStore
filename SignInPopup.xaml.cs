@@ -9,7 +9,12 @@ public partial class SignInPopup : BasePopupPage
 		InitializeComponent();
 	}
 
-    private void Button_Clicked(object sender, EventArgs e)
+    private void LoginButton_Clicked(object sender, EventArgs e)
+    {
+		MauiPopup.PopupAction.ClosePopup();
+	}
+
+    private void CloseButton_Clicked(object sender, EventArgs e)
     {
 		MauiPopup.PopupAction.ClosePopup();
 	}

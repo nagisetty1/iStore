@@ -7,7 +7,7 @@
         <VerticalStackLayout Spacing="25" Padding="30">
 
             <Label 
-                Text="Hello, World!"
+                Text="Welcome to iStore!"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
                 HorizontalOptions="Center" />
@@ -27,9 +27,7 @@
                 HorizontalOptions="Center" />
 
             <Button 
-                Text="Click me"
-                FontAttributes="Bold"
-                SemanticProperties.Hint="Counts the number of times you click"
+                Text="Login"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
 
