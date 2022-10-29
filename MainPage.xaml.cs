@@ -2,19 +2,16 @@
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
 
 	public MainPage()
 	{
 		InitializeComponent();
+		MauiPopup.PopupAction.DisplayPopup(new SignInPopup());
 	}
 
 	private void OnCounterClicked(object sender, EventArgs e)
 	{
-		count++;
-		CounterLabel.Text = $"Current count: {count}";
-
-		SemanticScreenReader.Announce(CounterLabel.Text);
+		//SemanticScreenReader.Announce(CounterLabel.Text);
 		MauiPopup.PopupAction.DisplayPopup(new SignInPopup());
 	}
 }
