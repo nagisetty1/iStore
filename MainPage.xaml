@@ -32,6 +32,7 @@
                 Background="Transparent"
                 Text="Register" TextColor="Blue"
                 Command="{Binding RegisterCommand}"
+                IsVisible="{Binding LoginButtonVisibility}"
                 CommandParameter="https://learn.microsoft.com/dotnet/maui/"
                 HorizontalOptions="Center" />
         </VerticalStackLayout>
