@@ -40,5 +40,12 @@ public partial class MainPage : ContentPage
 			DisplayName = loginResult;
 		}
 	});
+	public ICommand LogoutButtonCommand => new Command<string>((parameter) =>
+    {
+        loginResult = String.Empty;
+        LoginButtonVisibility = true;
+        DisplayNameVisibility = false;
+        DisplayName = loginResult;
+    });
 }
 

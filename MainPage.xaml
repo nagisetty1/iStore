@@ -22,6 +22,11 @@
                    FontFamily="Bold"
                    IsVisible="{Binding DisplayNameVisibility}"
                    TextTransform="Uppercase"/>
+            
+            <Button Text="Logout"
+                    HorizontalOptions="Center"
+                    IsVisible="{Binding DisplayNameVisibility}"
+                    Command="{Binding LogoutButtonCommand}"/>
             <Button 
                 Text="Login"
                 IsVisible="{Binding LoginButtonVisibility}"
