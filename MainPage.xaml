@@ -7,7 +7,7 @@
         <VerticalStackLayout Spacing="25" Padding="30">
 
             <Label 
-                Text="Welcome to iStore!"
+                Text="Welcome to nStore!"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
                 HorizontalOptions="Center" />
@@ -20,7 +20,14 @@
 
             <Button 
                 Text="Login"
-                Clicked="OnCounterClicked"
+                Command="{Binding LoginButtonCommand}"
+                HorizontalOptions="Center" />
+
+            <Button
+                Background="Transparent"
+                Text="Register" TextColor="Blue"
+                Command="{Binding RegisterCommand}"
+                CommandParameter="https://learn.microsoft.com/dotnet/maui/"
                 HorizontalOptions="Center" />
         </VerticalStackLayout>
     </ScrollView>
