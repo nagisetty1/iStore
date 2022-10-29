@@ -19,9 +19,9 @@
                 HorizontalOptions="Center" />
         <Entry Placeholder="Username"
                Text="{Binding UserName}"/>
-        <Entry Placeholder="Password"
+        <Entry Placeholder="Password" 
                Text="{Binding Password}"
-               IsPassword="True"/>
+               IsPassword="False"/>
         <HorizontalStackLayout HorizontalOptions="Center">
             <Button Text="Login"
                 Command="{Binding LoginButtonCommand}"/>

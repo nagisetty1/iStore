@@ -2,7 +2,6 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="iStore.MainPage">
-    
     <ScrollView>
         <VerticalStackLayout Spacing="25" Padding="30">
 
@@ -18,8 +17,14 @@
                 FontSize="18"
                 HorizontalOptions="Center" />
 
+            <Label Text="{Binding DisplayName, StringFormat='Hello {0:F2}'}"
+                   HorizontalOptions="Center"
+                   FontFamily="Bold"
+                   IsVisible="{Binding DisplayNameVisibility}"
+                   TextTransform="Uppercase"/>
             <Button 
                 Text="Login"
+                IsVisible="{Binding LoginButtonVisibility}"
                 Command="{Binding LoginButtonCommand}"
                 HorizontalOptions="Center" />
 
